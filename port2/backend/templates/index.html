@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gonchi Jaswitha — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- ====================== NAVIGATION ====================== -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#hero">GJ<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero" id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-grid"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <div class="hero-eyebrow-dot"></div>
+            <span class="hero-eyebrow-text">Portfolio — 2025</span>
+          </div>
+          <h1 class="hero-name">
+            <span class="hero-name-first">Gonchi</span>
+            <span class="hero-name-last">Jaswitha</span>
+          </h1>
+          <p class="hero-tagline">
+            <span>Student</span> · Future Data Analyst · <span>Technology Enthusiast</span>
+            <br>Turning data into decisions & code into solutions.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
+            <a href="#contact" class="btn"><span>Contact Me</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-ring2"></div>
+            <div class="hero-avatar-ring"></div>
+            <div class="hero-avatar">
+              <span class="hero-avatar-placeholder">GJ</span>
+            </div>
+            <div class="hero-badge hero-badge-1">📊 Data Analyst</div>
+            <div class="hero-badge hero-badge-2">💻 Tech Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ====================== ABOUT ====================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <p class="section-label reveal">About Me</p>
+          <h2 class="section-title reveal reveal-delay-1">Driven by data,<br>fueled by curiosity.</h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+          <div class="about-text reveal reveal-delay-2">
+            <p>Hi, I'm <strong>Gonchi Jaswitha</strong> — a passionate student dedicated to bridging the worlds of <strong>technology and data-driven insights</strong>. I believe that behind every dataset lies a story waiting to be discovered.</p>
+            <p>Currently pursuing my academic journey, I'm honing my skills in <strong>data analysis, programming, and financial literacy</strong> — building a foundation to drive impact in the real world.</p>
+            <p>When I'm not crunching numbers or writing code, I explore how technology intersects with finance and the broader economy.</p>
+          </div>
+          <div class="about-highlights reveal reveal-delay-3">
+            <div class="about-highlight-item">
+              <div class="about-highlight-number">7+</div>
+              <div class="about-highlight-label">Technologies Learned</div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-number">5+</div>
+              <div class="about-highlight-label">Projects Completed</div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-number">3+</div>
+              <div class="about-highlight-label">Domains Explored</div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-number">∞</div>
+              <div class="about-highlight-label">Curiosity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-focus reveal reveal-delay-3">
+          <div class="about-focus-item">
+            <span class="about-focus-icon">📊</span>
+            <div class="about-focus-info">
+              <h4>Data Analysis</h4>
+              <p>Transforming raw numbers into clear, actionable insights.</p>
+            </div>
+          </div>
+          <div class="about-focus-item">
+            <span class="about-focus-icon">💻</span>
+            <div class="about-focus-info">
+              <h4>Technology</h4>
+              <p>Building with Python, web technologies, and modern tools.</p>
+            </div>
+          </div>
+          <div class="about-focus-item">
+            <span class="about-focus-icon">💹</span>
+            <div class="about-focus-info">
+              <h4>Finance</h4>
+              <p>Understanding markets, investments, and economic systems.</p>
+            </div>
+          </div>
+          <div class="about-focus-item">
+            <span class="about-focus-icon">🧮</span>
+            <div class="about-focus-info">
+              <h4>Statistics</h4>
+              <p>Applying statistical methods to uncover meaningful patterns.</p>
+            </div>
+          </div>
+          <div class="about-focus-item">
+            <span class="about-focus-icon">🌐</span>
+            <div class="about-focus-info">
+              <h4>Web Development</h4>
+              <p>Crafting responsive, clean interfaces for the modern web.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SKILLS ====================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label reveal">Expertise</p>
+      <h2 class="section-title reveal reveal-delay-1">Skills &amp; Proficiency</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-item reveal reveal-delay-1">
+          <div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">82%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="82"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-2">
+          <div class="skill-header"><span class="skill-name">Data Analysis</span><span class="skill-pct">78%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="78"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-2">
+          <div class="skill-header"><span class="skill-name">HTML</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="88"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <div class="skill-header"><span class="skill-name">CSS</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="85"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">72%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="72"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-4">
+          <div class="skill-header"><span class="skill-name">Finance</span><span class="skill-pct">70%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="70"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-4">
+          <div class="skill-header"><span class="skill-name">Statistics</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="75"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-5">
+          <div class="skill-header"><span class="skill-name">Excel / Sheets</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-pct="80"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-circular-row">
+        <div class="skill-circle-wrap reveal reveal-delay-1">
+          <div class="skill-circle">
+            <svg viewBox="0 0 80 80"><circle class="skill-circle-bg" cx="40" cy="40" r="35" fill="none" stroke-width="3"/><circle class="skill-circle-fill" cx="40" cy="40" r="35" fill="none" stroke-width="3" data-dash="196"/></svg>
+            <div class="skill-circle-label">82%</div>
+          </div>
+          <span class="skill-circle-name">Python</span>
+        </div>
+        <div class="skill-circle-wrap reveal reveal-delay-2">
+          <div class="skill-circle">
+            <svg viewBox="0 0 80 80"><circle class="skill-circle-bg" cx="40" cy="40" r="35" fill="none" stroke-width="3"/><circle class="skill-circle-fill" cx="40" cy="40" r="35" fill="none" stroke-width="3" data-dash="173"/></svg>
+            <div class="skill-circle-label">78%</div>
+          </div>
+          <span class="skill-circle-name">Data</span>
+        </div>
+        <div class="skill-circle-wrap reveal reveal-delay-2">
+          <div class="skill-circle">
+            <svg viewBox="0 0 80 80"><circle class="skill-circle-bg" cx="40" cy="40" r="35" fill="none" stroke-width="3"/><circle class="skill-circle-fill" cx="40" cy="40" r="35" fill="none" stroke-width="3" data-dash="196"/></svg>
+            <div class="skill-circle-label">88%</div>
+          </div>
+          <span class="skill-circle-name">HTML</span>
+        </div>
+        <div class="skill-circle-wrap reveal reveal-delay-3">
+          <div class="skill-circle">
+            <svg viewBox="0 0 80 80"><circle class="skill-circle-bg" cx="40" cy="40" r="35" fill="none" stroke-width="3"/><circle class="skill-circle-fill" cx="40" cy="40" r="35" fill="none" stroke-width="3" data-dash="189"/></svg>
+            <div class="skill-circle-label">85%</div>
+          </div>
+          <span class="skill-circle-name">CSS</span>
+        </div>
+        <div class="skill-circle-wrap reveal reveal-delay-3">
+          <div class="skill-circle">
+            <svg viewBox="0 0 80 80"><circle class="skill-circle-bg" cx="40" cy="40" r="35" fill="none" stroke-width="3"/><circle class="skill-circle-fill" cx="40" cy="40" r="35" fill="none" stroke-width="3" data-dash="160"/></svg>
+            <div class="skill-circle-label">72%</div>
+          </div>
+          <span class="skill-circle-name">JS</span>
+        </div>
+        <div class="skill-circle-wrap reveal reveal-delay-4">
+          <div class="skill-circle">
+            <svg viewBox="0 0 80 80"><circle class="skill-circle-bg" cx="40" cy="40" r="35" fill="none" stroke-width="3"/><circle class="skill-circle-fill" cx="40" cy="40" r="35" fill="none" stroke-width="3" data-dash="167"/></svg>
+            <div class="skill-circle-label">75%</div>
+          </div>
+          <span class="skill-circle-name">Statistics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PROJECTS ====================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <span class="project-number">01</span>
+          <div class="project-icon">📈</div>
+          <h3 class="project-title">Stock Market Dashboard</h3>
+          <p class="project-desc">An interactive Python-powered dashboard visualizing real-time stock trends, volume analysis, and price predictions using historical data.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Matplotlib</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <span class="project-number">02</span>
+          <div class="project-icon">🧮</div>
+          <h3 class="project-title">Expense Tracker App</h3>
+          <p class="project-desc">A clean, minimal web app to track personal finances with category-wise breakdowns, monthly trends, and exportable reports.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <span class="project-number">03</span>
+          <div class="project-icon">🔍</div>
+          <h3 class="project-title">Data Insights Explorer</h3>
+          <p class="project-desc">An EDA tool that accepts CSV datasets and auto-generates statistical summaries, correlation heatmaps, and distribution plots.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">NumPy</span>
+            <span class="project-tag">Seaborn</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <span class="project-number">04</span>
+          <div class="project-icon">🌐</div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">This very portfolio — a premium, monochrome, fully responsive personal site with smooth animations and modern UI patterns.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <span class="project-number">05</span>
+          <div class="project-icon">📊</div>
+          <h3 class="project-title">Sales Performance Analytics</h3>
+          <p class="project-desc">A business intelligence report built with Python and Excel showcasing regional sales KPIs, YOY comparisons, and forecasts.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Excel</span>
+            <span class="project-tag">Statistics</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <span class="project-number">06</span>
+          <div class="project-icon">🤖</div>
+          <h3 class="project-title">Predictive ML Model</h3>
+          <p class="project-desc">A beginner machine-learning project implementing linear regression and classification to predict housing prices from a public dataset.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Scikit-learn</span>
+            <span class="project-tag">ML</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== EDUCATION ====================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-label reveal">Academic Journey</p>
+      <h2 class="section-title reveal reveal-delay-1">Education</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-dot"></div>
+          <div class="edu-period">2022 — Present</div>
+          <div class="edu-degree">Bachelor's in Technology / Science</div>
+          <div class="edu-school">University / College Name, City</div>
+          <div class="edu-desc">Pursuing core subjects in Computer Science, Data Structures, Statistics, and Financial Mathematics. Active member of the coding and analytics club. Consistent academic performer with a focus on applied learning.</div>
+        </div>
+
+        <div class="edu-item reveal reveal-delay-1">
+          <div class="edu-dot"></div>
+          <div class="edu-period">2020 — 2022</div>
+          <div class="edu-degree">Higher Secondary Certificate (Class XII)</div>
+          <div class="edu-school">School Name, City</div>
+          <div class="edu-desc">Completed with distinction in Mathematics, Computer Science, and Physics. Developed a strong analytical foundation and discovered a passion for programming and data.</div>
+        </div>
+
+        <div class="edu-item reveal reveal-delay-2">
+          <div class="edu-dot"></div>
+          <div class="edu-period">2018 — 2020</div>
+          <div class="edu-degree">Secondary School Certificate (Class X)</div>
+          <div class="edu-school">School Name, City</div>
+          <div class="edu-desc">Achieved excellent academic standing. Built foundational skills in logic, mathematics, and critical thinking that underpin all current pursuits.</div>
+        </div>
+
+        <div class="edu-item reveal reveal-delay-3">
+          <div class="edu-dot"></div>
+          <div class="edu-period">2024 — Ongoing</div>
+          <div class="edu-degree">Data Analysis Certification</div>
+          <div class="edu-school">Online Platform (Coursera / Google / IBM)</div>
+          <div class="edu-desc">Pursuing professional certification in Data Analytics covering Python, SQL, Tableau, and statistical analysis with real-world case studies.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CONTACT ====================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <p class="section-label reveal">Get In Touch</p>
+      <h2 class="section-title reveal reveal-delay-1">Let's Connect</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+
+      <div class="contact-grid">
+        <div class="reveal reveal-delay-2">
+          <p>I'm always open to conversations about data, technology, collaborations, or just a good chat. Feel free to reach out!</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉</div>
+            <div class="contact-detail-info">
+              <small>Email</small>
+              <span>gonchi.jaswitha@email.com</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-info">
+              <small>Location</small>
+              <span>India</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-info">
+              <small>Response Time</small>
+              <span>Within 24 hours</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">in</a>
+            <a href="#" class="social-link" title="GitHub">gh</a>
+            <a href="#" class="social-link" title="Twitter">𝕏</a>
+            <a href="#" class="social-link" title="Instagram">ig</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-3" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+          </div>
+          <div class="form-status" id="cstat"></div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start">
+            <span>Send Message →</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 <strong>Gonchi Jaswitha</strong> — All rights reserved.</p>
+        <button class="footer-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          ↑ Back to top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
